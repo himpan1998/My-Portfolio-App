@@ -31,7 +31,7 @@ const Intro = () => {
           <div  className="multiline">
           <p>
           Experienced Software Engineer with expertise in backend development seeking a position as a Backend Developer with a focus on Node.js.
-          Skilled in various programming languages including JavaScript, TypeScript, and PHP along with database management using SQL.
+          Skilled in various programming languages including JavaScript and TypeScript along with database management using SQL.
           Proficient in web development, particularly RESTful APIs and MVC architecture. 
           Strong problem-solving skills with a background in algorithmic thinking.
           </p>
