@@ -1,16 +1,17 @@
 import "./App.css";
 import Topbar from "./Components/Topbar";
-import Intro from "./Components/Intro";
 import Header from "./Components/Header";
-
+import Intro from "./Components/Intro";
+import Experience from "./Components/Experience";
 
 
 function App() {
   return (
     <div class="App">
-      <Topbar />
+      <Topbar/>
       <Header/>
-      <Intro />
+      <Intro/>
+      <Experience/>
     </div>
   )
 }
