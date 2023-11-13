@@ -5,12 +5,10 @@ import "./Experience.css";
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>The Web development Skills I Have</h5>
-      <h2>Skills</h2>
+      <h2> Technical Skills</h2>
       <div className="container experience__container">
         <div className="experience__frontend">
           <h3>Web-Development</h3>
-          {/* <h4>Mern Stack</h4> */}
           <div className="experience__content">
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
@@ -34,7 +32,7 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>React Js</h4>
+              <h4>React Js(Basics)</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />

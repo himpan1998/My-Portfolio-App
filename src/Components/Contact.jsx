@@ -33,8 +33,7 @@ const Contact = () => {
     <section id="contact" className="contactFull">
       <h5>Get In Touch</h5>
       <h5>
-        I do receive your messages and will respond asap if the valid email is
-        provided :
+        I do receive your messages and will respond ASAP:
       </h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">
@@ -68,7 +67,7 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
+          {message && <span>Thanks,I'll reply ASAP</span>}
         </form>
       </div>
     </section>

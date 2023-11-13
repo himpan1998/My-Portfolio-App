@@ -10,9 +10,9 @@ const Header = () => {
   return (
     <header id="home">
       <div className="container header-container">
-        <h5>Hello I'm</h5>
+        <h3>Hello I'm</h3>
         <h1>Himanshu Pandey</h1>
-        <h5 className="text-light">Software Engineer</h5>
+        <h2 className="text-light">Software Engineer</h2>
         <div className="cta">
           <a href={HimanshuPandeyResume} download className="btn">
             Download CV
