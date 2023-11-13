@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio-app",
+  "author":"Himanshu Pandey",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
