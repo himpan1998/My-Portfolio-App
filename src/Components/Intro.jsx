@@ -20,7 +20,7 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1.5 year</small>
+              <small>2 year</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
@@ -30,10 +30,8 @@ const Intro = () => {
           </div>
           <div  className="multiline">
           <p>
-          Experienced Software Engineer with expertise in backend development seeking a position as a Backend Developer with a focus on Node.js.
-          Skilled in various programming languages including JavaScript and TypeScript along with database management using SQL.
-          Proficient in web development, particularly RESTful APIs and MVC architecture. 
-          Strong problem-solving skills with a background in algorithmic thinking.
+           Dedicated and result-driven software engineer with over 2 year hands-on experience in Web and API development.
+           Skilled in creating end-to-end production-ready features in fast-paced startup environments,and eager to contribute to a dynamic team.
           </p>
           </div>
           <a href="#contact" className="btn btn-primary">

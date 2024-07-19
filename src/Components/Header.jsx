@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai"
 import "./Header.css";
 
-import HimanshuPandeyResume from "../Assets/himanshu_pandey_resume.pdf"
+import HimanshuPandeyResume from "../Assets/Himanshu-Pandey-Software-Engineer.pdf"
 
 const Header = () => {
   return (
