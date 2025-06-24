@@ -1,64 +1,143 @@
 header {
-    height: 100%;
-    padding-top: 7rem;
-    overflow: hidden;
+  height: 100%;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  background-color: transparent;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: 1px solid var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: #0077b6; /* Slightly darker blue on hover */
+  color: #fff;
+}
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  position: fixed; /* Stay visible when scrolling */
+  left: 1.2rem;    /* Slightly towards edge */
+  top: 50%;        /* Center vertically */
+  transform: translateY(-50%);
+  z-index: 10;     /* Ensure above content */
+}
+
+.header__socials a {
+  font-size: 1.1rem;  /* Balanced icon size */
+  transition: var(--transition);
+}
+
+.header__socials a.linkedin {
+  color: #0a66c2;
+}
+
+.header__socials a.github {
+  color: #333;
+}
+
+.header__socials a.instagram {
+  color: #e1306c;
+}
+
+.header__socials a:hover {
+  transform: scale(1.2);
+}
+
+.scroll__down {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+  top: 15%;
+  /* z-index: 10;   */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
   }
-  
-  .header__container {
-    text-align: center;
-    height: 100%;
-    position: relative;
+
+  .header__socials {
+    left: 0.8rem;
   }
-  
-  .cta {
+
+  .scroll__down {
+    right: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+
+  .header__socials-inline {
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
-    margin-top: 2.5rem;
-  }
-  
-  .header__socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 0.8rem;
-    position: absolute;
-    left: 5rem;
-    bottom: 1rem;
+    margin-top: 1rem;
   }
-  
-  .header__socials::after {
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+
+  .header__socials-inline a {
+    font-size: 1rem;
+    transition: var(--transition);
   }
-  
-  .scroll__down {
-    position: absolute;
-    right: 5rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
+
+  .header__socials-inline a.linkedin {
+    color: #0a66c2;
   }
-  
-  @media screen and (max-width: 1024px){
-    header {
-      height: 68vh;
-    }
-  
-    section {
-      margin-top: 6rem;
-    }
+
+  .header__socials-inline a.github {
+    color: #333;
   }
-  
-  @media screen and (max-width: 600px){
-    header {
-      height: 100vh;
-    }
-  
-    .header__socials,
-    .scroll__down {
-      display: none;
-    }
+
+  .header__socials-inline a.instagram {
+    color: #e1306c;
   }
+
+  .header__socials-inline a:hover {
+    transform: scale(1.2);
+  }
+}

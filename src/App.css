@@ -1,39 +1,149 @@
+/* :root {
+  --color-primary: #0077b6;
+  --color-primary-variant: #90e0ef;
+  --color-primary-light: #caf0f8;
+
+  --color-bg: #f9f9f9;
+  --color-bg-variant: #ffffff;
+
+  --color-text: #222;
+  --color-light: #555;
+
+  --transition: all 0.3s ease;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+/* GLOBAL SECTION SPACING */
+section {
+  margin-top: 2rem;   /* small gap before the section */
+  margin-bottom: 2rem;  /* small gap after the section */
+  padding-top: 0;     
+  padding-bottom: 0;
+}
+
+/* OPTIONAL: If you want even tighter spacing between sections */
+#about {
+  margin-bottom: 1.5rem;
+}
+
+#portfolio {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+#contact {
+  margin-top: 0;
+}
+
+#gallery {
+  margin-top: 0;
+}
+/* REDUCE HEADING SPACING */
+h2, h5 {
+  margin-bottom: 0.75rem;  /* smaller bottom margin for headings */
+}
+
+/* CONTAINER CLEANUP */
+.container {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* FOOTER MARGIN ADJUSTMENT */
+footer {
+  margin-top: 3rem;  /* reduce footer gap if too large */
+}
+
+/* KEEP RESPONSIVENESS INTACT */
+@media screen and (max-width: 600px) {
+  section {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+/* Reset and base styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* App container */
 .App {
-    text-align: center;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Global section styling */
+section {
+  padding: 2.5rem 1rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+
+section h5 {
+  color: var(--color-light);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Anchor links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Button base styling (shared in btn class) */
+.btn {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0077b6;
+}
+
+/* Responsive fixes */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
   }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+
+  section h2 {
+    font-size: 1.75rem;
   }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+}

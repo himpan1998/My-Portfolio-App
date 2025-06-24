@@ -1,64 +1,91 @@
 footer {
-    background: var(--color-primary);
+    background: var(--color-bg-variant);
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 7rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--color-primary-variant);
 }
 
 footer a {
-    color: var(--color-bg);
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--color-accent);
 }
 
 .footer__logo {
     font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
     display: inline-block;
+    color: var(--color-dark);
 }
 
 .permalinks {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-    margin: 0 auto 3rem;
+    gap: 1.5rem;
+    margin: 0 auto 2rem;
 }
 
 .footer__socials {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .footer__socials a {
-    background: var(--color-bg);
-    color: var(--color-white);
-    padding: 0.8rem;
-    border-radius: 0.7rem;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
     display: flex;
-    border: 1px solid transparent;
+    font-size: 1.5rem;
+    transition: var(--transition);
 }
 
+/* Platform-specific icon colors */
+.footer__socials a.linkedin {
+    color: #0077b5;
+    /* LinkedIn blue */
+}
+
+.footer__socials a.github {
+    color: #000000;
+    /* GitHub black */
+}
+
+.footer__socials a.instagram {
+    color: #e4405f;
+    /* Instagram pink-red */
+}
+
+.footer__socials a.udemy {
+    color: #ec5252;
+    /* Udemy red */
+}
+
+/* Hover effect: subtle scale and bg tint */
 .footer__socials a:hover {
-    background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+    transform: scale(1.1);
+    background: var(--color-white);
 }
 
 .footer__copyright {
-    margin-bottom: 4rem;
-    color: var(--color-bg);
+    color: var(--color-muted);
+    font-size: 0.85rem;
 }
-  
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 600px) {
     .permalinks {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .footer__socials {
-        margin-bottom: 2.6rem;
+        margin-bottom: 2rem;
     }
 }

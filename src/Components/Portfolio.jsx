@@ -13,6 +13,17 @@ const portfolio = () => {
     //   link: "https://github.com/himpan1998/Ecommerce_Dashboard",
     //   github: "https://github.com/himpan1998/Ecommerce_Dashboard",
     // },
+      {
+      id: 1,
+      title: "Weather-Prediction-App",
+      img: IMG1,
+      description: "Weather-App",
+      technologies: "Javascript |React Js",
+      link: "https://weatherapphimanshu.netlify.app/",
+      github: "https://github.com/yourusername/weather-app.git"
+
+
+    },
     {
       id: 2,
       title: "BMI Calculator with React.js",
@@ -22,15 +33,15 @@ const portfolio = () => {
       link: "https://bmicalculatorhimanshu.netlify.app/",
       github: "https://github.com/himpan1998/BMI-Calculator",
     },
-    {
-      id: 3,
-      title: "Calculator with React.js",
-      img: IMG1,
-      description: "Calculator",
-      technologies: "Javascript |  React Js | Hooks:useState",
-      link: "https://calculatorhimanshu.netlify.app/",
-      github: "https://github.com/himpan1998/Calculator",
-    },
+    // {
+    //   id: 3,
+    //   title: "Calculator with React.js",
+    //   img: IMG1,
+    //   description: "Calculator",
+    //   technologies: "Javascript |  React Js | Hooks:useState",
+    //   link: "https://calculatorhimanshu.netlify.app/",
+    //   github: "https://github.com/himpan1998/Calculator",
+    // },
     {
       id: 4,
       title: "Expense-Tracker with React.js",

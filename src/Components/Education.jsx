@@ -2,6 +2,7 @@ import React from "react";
 import { FaUniversity, FaSchool, FaGraduationCap } from "react-icons/fa";
 import { GiGraduateCap } from "react-icons/gi";
 import "./Education.css";
+import gateResult from '../Assets/gate/gate_result.PDF'
 
 const Education = () => {
   return (
@@ -11,7 +12,48 @@ const Education = () => {
         <div className="education__details">
           <FaSchool className="education__details-icon" />
           <div>
-            <h4>National Institute of Technology ,<br></br>Durgapur</h4>
+            <h4>
+              <a
+                href="https://dms.iitd.ac.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#0073e6", // a nice blue
+                  textDecoration: "underline",
+                  fontWeight: "bold",
+                }}
+              >
+                Indian Institute Of Technology <br /> IIT-Delhi (DMS)
+              </a>
+            </h4>
+
+            <div className="degree-info">
+              <small>
+                Doctor Of Philosophy in Operations and Supply Chain Management
+              </small>
+              {/* <FaGraduationCap className="education__details-cgpa-icon" />
+              <small></small> */}
+            </div>
+            <h5>july 2025-present</h5>
+          </div>
+        </div>
+        <div className="education__details">
+          <FaSchool className="education__details-icon" />
+          <div>
+            <h4>
+              <a
+                href="https://nitdgp.ac.in/department/mathematics"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#0073e6",
+                  textDecoration: "underline",
+                  fontWeight: "bold",
+                }}
+              >
+                National Institute of Technology <br /> NIT-Durgapur
+              </a>
+            </h4>
             <div className="degree-info">
               <small>Master of Technology in Operations Research</small>
               <FaGraduationCap className="education__details-cgpa-icon" />
@@ -23,7 +65,21 @@ const Education = () => {
         <div className="education__details">
           <FaUniversity className="education__details-icon" />
           <div>
-            <h4>Dr. A.P.J. Abdul Kalam Technical University, Lucknow</h4>
+            {/* <h4>Dr. A.P.J. Abdul Kalam Technical University, Lucknow</h4> */}
+            <h4>
+              <a
+                href="https://aktu.ac.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#0073e6",
+                  textDecoration: "underline",
+                  fontWeight: "bold",
+                }}
+              >
+                Dr. A.P.J. Abdul Kalam Technical University, Lucknow
+              </a>
+            </h4>
             <div className="degree-info">
               <small>Bachelor of Technology in Textile</small>
               <FaGraduationCap className="education__details-cgpa-icon" />
@@ -37,7 +93,15 @@ const Education = () => {
           <div>
             <h4>Graduate Aptitude Test in Engineering</h4>
             <small>All India Rank - 100</small>
-            <h5>2020</h5>
+            <h5>GATE -2020</h5>
+            <a
+      href={gateResult}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: 'blue' }}
+    >
+      GATE Certificate
+    </a>
           </div>
         </div>
       </div>

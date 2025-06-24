@@ -1,151 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --color-bg: #f4f6f8;
+  --color-bg-variant: #e0e5ec;
+  --color-primary: #004aad;
+  --color-primary-variant: #0066cc;
+  --color-accent: #00a8e8;
+  --color-white: #ffffff;
+  --color-dark: #212529;
+  --color-muted: #6c757d;
+
+  --transition: all 300ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;300;700;900&display=swap');
-  
-  * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  :root {
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
-  
-    --transition: all 400ms ease;
-  
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--color-bg);
-    color: var(--color-white);
-    line-height: 1.7;
-    /* background-image: url(../src/Assets/bg-texture.png); */
-  }
-  
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  line-height: 1.7;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+section>h2,
+section>h5 {
+  text-align: center;
+}
+
+section>h2 {
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 0.5rem;
+  color: var(--color-primary);
+  background: transparent;
+  font-weight: 500;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-variant);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.text-light {
+  color: var(--color-muted);
+}
+
+footer {
+  background-color: var(--color-bg-variant);
+  color: var(--color-dark);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--color-primary-variant);
+}
+
+footer a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: var(--color-accent);
+}
+
+.scroll__down {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.scroll__down:hover {
+  color: var(--color-primary);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1024px) {
   .container {
-    width: var(--container-width-lg);
-    margin: 0 auto;
+    width: var(--container-width-md);
   }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 500;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-  }
-  
+
   section {
-    margin-top: 8rem;
+    padding: 4rem 0;
   }
-  
-  section > h2,
-  section > h5 {
-    color: var(--color-light);
-    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
   }
-  
-  section > h2 {
-    color: var(--color-primary);
-    margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2rem;
   }
-  
-  .text-light {
-    color: var(--color-primary)
+
+  h2 {
+    font-size: 1.5rem;
   }
-  
-  a {
-    transition: var(--transition);
-    color: var(--color-primary)
+
+  section {
+    padding: 3rem 0;
   }
-  
-  a:hover {
-    color: var(--color-white);
+
+  .scroll__down {
+    font-size: 0.75rem;
+    bottom: 1rem;
   }
-  
-  .btn {
-    width: max-content;
-    display: inline-block;
-    color: var(--color-primary);
-    padding: 0.75rem 1.2rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
-  }
-  
-  .btn:hover {
-    background-color: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
-  }
-  
-  .btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-bg);
-  }
-  
-  img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  @media screen and (max-width: 1024px){
-    .container {
-      width: var(--container-width-md);
-    }
-  
-    section {
-      margin-top: 6rem;
-    }
-  }
-  
-  @media screen and (max-width: 600px){
-    .container {
-      width: var(--container-width-sm);
-    }
-  
-    section > h2 {
-      margin-bottom: 2rem;
-    }
-  }
-  
+}
