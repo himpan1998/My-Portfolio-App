@@ -2,7 +2,7 @@ import { FaAward } from "react-icons/fa";
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
 import img from "../Assets/himanshu.jpeg";
-import "./Intro.css";
+import "./intro.css";
 
 const Intro = () => {
   return (
@@ -24,15 +24,15 @@ const Intro = () => {
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              {/* <h5>Projects</h5> */}
-               <a href="">Projects</a>
+              <h5>Projects</h5>
+               {/* <a>Projects</a> */}
               {/* <small>Projects</small> */}
             </article>
           </div>
           <div className="multiline">
             <p style={{textAlign:"justify",lineHeight:'1.5',maxWidth:'600px',margin:'0.5 auto'}}>
               Operations Research professional currently pursuing PhD in Management Stuidies (Operations and Supply Chain Manangement) at
-              IIT Delhi, Department of Manangement Studies (DMS), With an M.Tech in
+              IIT Delhi, Department of Manangement Studies (DMS),With an M.Tech in
               Operations Research from NIT Durgapur and over 3 years of
               experience in Web,Database and API development, optimizing
               solutions, and driving operational efficiency through

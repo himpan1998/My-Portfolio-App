@@ -105,7 +105,8 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: auto;
+    padding-top: 50px;
   }
 
   .header__socials,
@@ -113,6 +114,9 @@ header {
     display: none;
   }
 
+  .experience__content {
+    display: block;
+}
   .header__socials-inline {
     display: flex;
     justify-content: center;
