@@ -1,15 +1,18 @@
-import { useState } from "react";
-import { AiOutlineHome } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
-import { BiBook } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
-import { BiMessageSquareDetail } from "react-icons/bi";
+import React, { useState } from "react";
+
+// Icons
+import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { BiBook, BiBookBookmark, BiMessageSquareDetail } from "react-icons/bi";
+import { RiBriefcaseLine } from "react-icons/ri";
+import { MdPhotoLibrary, MdWorkOutline } from "react-icons/md";
+
 import "./Topbar.css";
 
 const Topbar = () => {
   const [activeNav, setActiveNav] = useState("#home");
+
   return (
-    <nav>
+    <nav className="topbar">
       <a
         href="#home"
         onClick={() => setActiveNav("#home")}
@@ -17,6 +20,7 @@ const Topbar = () => {
       >
         <AiOutlineHome />
       </a>
+
       <a
         href="#about"
         onClick={() => setActiveNav("#about")}
@@ -24,20 +28,47 @@ const Topbar = () => {
       >
         <AiOutlineUser />
       </a>
+
       <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
+        href="#education"
+        onClick={() => setActiveNav("#education")}
+        className={activeNav === "#education" ? "active" : ""}
       >
         <BiBook />
       </a>
+
+      <a
+        href="#publications"
+        onClick={() => setActiveNav("#publications")}
+        className={activeNav === "#publications" ? "active" : ""}
+      >
+        <BiBookBookmark />
+      </a>
+
+      <a
+        href="#gallery"
+        onClick={() => setActiveNav("#gallery")}
+        className={activeNav === "#gallery" ? "active" : ""}
+      >
+        <MdPhotoLibrary />
+      </a>
+
+      <a
+        href="#skills"
+        onClick={() => setActiveNav("#skills")}
+        className={activeNav === "#skills" ? "active" : ""}
+      >
+        <MdWorkOutline />
+      </a>
+
       <a
         href="#portfolio"
         onClick={() => setActiveNav("#portfolio")}
         className={activeNav === "#portfolio" ? "active" : ""}
       >
-        <RiServiceLine />
+        <RiBriefcaseLine />
       </a>
+
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
@@ -48,4 +79,5 @@ const Topbar = () => {
     </nav>
   );
 };
+
 export default Topbar;

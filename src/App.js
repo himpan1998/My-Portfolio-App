@@ -7,6 +7,7 @@ import Gallery from "./Components/Gallery";
 import Certification from "./Components/Certification";
 import Publications from "./Components/Publications";
 import Experience from "./Components/Experience";
+import Skills from "./Components/Skills";
 import Portfolio from "./Components/Portfolio";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
@@ -22,6 +23,7 @@ function App() {
       <Gallery />
       <Certification />
       <Experience />
+      <Skills />
       <Portfolio />
       <Contact />
       <Footer />

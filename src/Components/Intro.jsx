@@ -24,9 +24,7 @@ const Intro = () => {
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-               {/* <a>Projects</a> */}
-              {/* <small>Projects</small> */}
+              <a href="#portfolio"><br></br>Projects</a>
             </article>
           </div>
           <div className="multiline">
@@ -39,7 +37,7 @@ const Intro = () => {
               collaboration.
             </p>
           </div>
-          <a href="#portfolio" className="btn btn-primary btn-right">
+          <a href="#contact" className="btn btn-primary btn-right">
             Let's Talk
           </a>
         </div>

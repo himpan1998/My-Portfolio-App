@@ -77,17 +77,6 @@ header {
   transform: scale(1.2);
 }
 
-.scroll__down {
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  transform: rotate(90deg);
-  font-weight: 300;
-  font-size: 0.9rem;
-  top: 15%;
-  /* z-index: 10;   */
-}
-
 /* Responsive adjustments */
 @media screen and (max-width: 1024px) {
   header {
