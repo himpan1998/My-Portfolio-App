@@ -1,8 +1,9 @@
 import { FaAward } from "react-icons/fa";
+import { FaBriefcase } from 'react-icons/fa';
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
 import img from "../Assets/himanshu.jpeg";
-import "./intro.css";
+import "./Intro.css";
 
 const Intro = () => {
   return (
@@ -17,15 +18,19 @@ const Intro = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
+            <a href="#experience">
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>Over 3 years of experience</small>
+              <FaBriefcase className="about__icon" />
+              <h5>Experience (3+ years)</h5>
+              {/* <small>Over 3 years of experience</small> */}
             </article>
+            </a>
+            <a href="#portfolio">
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <a href="#portfolio"><br></br>Projects</a>
+              <h5>Projects</h5>
             </article>
+            </a>
           </div>
           <div className="multiline">
             <p style={{textAlign:"justify",lineHeight:'1.5',maxWidth:'600px',margin:'0.5 auto'}}>

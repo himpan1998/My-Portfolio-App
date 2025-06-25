@@ -15,7 +15,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <div class="App">
-      <Topbar />
+      {/* <Topbar />
       <Header />
       <Intro />
       <Education />
@@ -26,7 +26,20 @@ function App() {
       <Skills />
       <Portfolio />
       <Contact />
-      <Footer />
+      <Footer /> */}
+      <Topbar /> {/* Navigation bar at top */}
+      <Header /> {/* Hero banner / name / tagline */}
+      <Intro /> {/* Short personal intro / summary */}
+      <Skills /> {/* Showcase your tech / domain skills early */}
+      <Experience /> {/* Work experience to give credibility */}
+      <Education /> {/* Education details after work */}
+      <Publications />{" "}
+      {/* Optional: move this after Education if academic focus */}
+      <Portfolio /> {/* Showcase projects you've done */}
+      <Gallery /> {/* Visual gallery — supplementing portfolio */}
+      <Certification /> {/* Certifications add authority */}
+      <Contact /> {/* Call to action — contact info */}
+      <Footer /> {/* Footer: copyright, links */}
     </div>
   );
 }

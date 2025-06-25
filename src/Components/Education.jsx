@@ -4,7 +4,9 @@ import { AiOutlineEye } from "react-icons/ai"; // Eye icon for "view"
 import { FaTrophy,FaMedal } from 'react-icons/fa'; // Font Awesome trophy
 import { GiGraduateCap } from "react-icons/gi";
 import "./Education.css";
-import gateResult from "../Assets/gate/gate_result.PDF";
+import gateResult from "../Assets/gate/gate_score_card.pdf";
+import masterDegree from "../Assets/Master Degree/master_degree.pdf";
+import bachelorDegree from "../Assets/Bachlelor Degree/B.tech_degree.jpg";
 
 const Education = () => {
   return (
@@ -63,7 +65,7 @@ const Education = () => {
             </div>
             <h5>2020-2022</h5>
             <a
-              href={gateResult}
+              href={masterDegree}
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "blue" }}
@@ -99,7 +101,7 @@ const Education = () => {
             </div>
             <h5>2016–2020</h5>
             <a
-              href={gateResult}
+              href={bachelorDegree}
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "blue" }}
@@ -131,7 +133,7 @@ const Education = () => {
         <div className="education__details">
           <FaMedal className="education__details-icon" />
           <div>
-            <h4>Received Indian Oil Merit-cum Scholarship</h4>
+            <h4>Got Indian Oil Merit-Cum Scholarship</h4>
             <small>IOCL Scholarship</small>
             <h5>2013–2014</h5>
 
@@ -141,9 +143,9 @@ const Education = () => {
               rel="noopener noreferrer"
               style={{ color: "blue" }}
             >
-              <AiOutlineEye />
+              {/* <AiOutlineEye />
               <br></br>
-              Document
+              Document */}
             </a>
           </div>
         </div>

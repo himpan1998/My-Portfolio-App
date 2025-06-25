@@ -2,9 +2,10 @@ import React, { useState } from "react";
 
 // Icons
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiBook, BiBookBookmark, BiMessageSquareDetail } from "react-icons/bi";
+import { BiBook, BiBookBookmark, BiMessageSquareDetail, BiCodeBlock } from "react-icons/bi";
 import { RiBriefcaseLine } from "react-icons/ri";
-import { MdPhotoLibrary, MdWorkOutline } from "react-icons/md";
+import { MdPhotoLibrary, MdWork } from "react-icons/md";
+import { FaCertificate } from "react-icons/fa";
 
 import "./Topbar.css";
 
@@ -30,6 +31,22 @@ const Topbar = () => {
       </a>
 
       <a
+        href="#skills"
+        onClick={() => setActiveNav("#skills")}
+        className={activeNav === "#skills" ? "active" : ""}
+      >
+        <BiCodeBlock />   {/* Represents coding / skills */}
+      </a>
+
+      <a
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
+      >
+        <MdWork />   {/* Represents work / experience */}
+      </a>
+
+      <a
         href="#education"
         onClick={() => setActiveNav("#education")}
         className={activeNav === "#education" ? "active" : ""}
@@ -46,6 +63,14 @@ const Topbar = () => {
       </a>
 
       <a
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
+      >
+        <RiBriefcaseLine />
+      </a>
+
+      <a
         href="#gallery"
         onClick={() => setActiveNav("#gallery")}
         className={activeNav === "#gallery" ? "active" : ""}
@@ -54,19 +79,11 @@ const Topbar = () => {
       </a>
 
       <a
-        href="#skills"
-        onClick={() => setActiveNav("#skills")}
-        className={activeNav === "#skills" ? "active" : ""}
+        href="#certification"
+        onClick={() => setActiveNav("#certification")}
+        className={activeNav === "#certification" ? "active" : ""}
       >
-        <MdWorkOutline />
-      </a>
-
-      <a
-        href="#portfolio"
-        onClick={() => setActiveNav("#portfolio")}
-        className={activeNav === "#portfolio" ? "active" : ""}
-      >
-        <RiBriefcaseLine />
+        <FaCertificate />   {/* Represents certification */}
       </a>
 
       <a

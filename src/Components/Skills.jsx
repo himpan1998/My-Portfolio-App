@@ -12,6 +12,26 @@ const Skills = () => {
           <div className="skill__content">
             <article className="skill__details">
               <BsFillPatchCheckFill className="skill__details-icon" />
+              <h4>Math. Modelling</h4>
+            </article>
+            <article className="skill__details">
+              <BsFillPatchCheckFill className="skill__details-icon" />
+              <h4>Opt. Techniques</h4>
+            </article>
+             <article className="skill__details">
+              <BsFillPatchCheckFill className="skill__details-icon" />
+              <h4>Gurobi,Pulp</h4>
+            </article>
+            <article className="skill__details">
+              <BsFillPatchCheckFill className="skill__details-icon" />
+              <h4>Python</h4>
+            </article>
+            <article className="skill__details">
+              <BsFillPatchCheckFill className="skill__details-icon" />
+              <h4>JavaScript</h4>
+            </article>
+            <article className="skill__details">
+              <BsFillPatchCheckFill className="skill__details-icon" />
               <h4>Node.js</h4>
             </article>
             <article className="skill__details">
@@ -21,14 +41,6 @@ const Skills = () => {
             <article className="skill__details">
               <BsFillPatchCheckFill className="skill__details-icon" />
               <h4>Nest.js</h4>
-            </article>
-            <article className="skill__details">
-              <BsFillPatchCheckFill className="skill__details-icon" />
-              <h4>JavaScript</h4>
-            </article>
-            <article className="skill__details">
-              <BsFillPatchCheckFill className="skill__details-icon" />
-              <h4>TypeScript</h4>
             </article>
             <article className="skill__details">
               <BsFillPatchCheckFill className="skill__details-icon" />
