@@ -1,8 +1,7 @@
 import React from "react";
-import { FaUniversity, FaSchool, FaGraduationCap } from "react-icons/fa";
+import { FaUniversity, FaSchool} from "react-icons/fa";
 import { AiOutlineEye } from "react-icons/ai"; // Eye icon for "view"
 import { FaTrophy,FaMedal } from 'react-icons/fa'; // Font Awesome trophy
-import { GiGraduateCap } from "react-icons/gi";
 import "./Education.css";
 import gateResult from "../Assets/gate/gate_score_card.pdf";
 import masterDegree from "../Assets/Master Degree/master_degree.pdf";

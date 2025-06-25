@@ -1,9 +1,8 @@
-import { FaAward } from "react-icons/fa";
 import { FaBriefcase } from 'react-icons/fa';
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
 import img from "../Assets/himanshu.jpeg";
-import "./Intro.css";
+import "./intro.css";
 
 const Intro = () => {
   return (
