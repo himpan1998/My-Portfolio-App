@@ -54,6 +54,40 @@
   text-align: center;
   transition: var(--transition);
 }
+.summary_section {
+  text-align: justify;
+  line-height: 1.8;
+  /* Improve vertical spacing between lines */
+  max-width: 90%;
+  /* Allow flexible width on mobile */
+  margin: 1rem auto;
+  /* More vertical margin for breathing room */
+  word-spacing: 0.02em;
+  /* Gentle word spacing for justified text */
+  letter-spacing: normal;
+  font-size: 1rem;
+  /* Mobile-friendly font size */
+  padding: 0 12px;
+  /* Ensure no edge touching on small devices */
+}
+
+/* Tablet (≥600px) */
+@media (min-width: 600px) {
+  .summary_section {
+    max-width: 80%;
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+}
+
+/* Desktop (≥900px) */
+@media (min-width: 900px) {
+  .summary_section {
+    max-width: 600px;
+    /* Fixed ideal width for desktop */
+    font-size: 1.2rem;
+  }
+}
 
 .about__card:hover {
   background: transparent;

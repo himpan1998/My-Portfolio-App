@@ -10,12 +10,9 @@ const Header = () => {
   return (
     <header id="home">
       <div className="container header-container">
-        <h3>Hello, I'm</h3>
         <h1>Himanshu Pandey</h1>
         <h3 className="text-light">
-          PhD Scholar in Operations and Supply Chain Management | IIT Delhi
-          (DMS) <br></br> API & Backend Developer | Expert in Optimization and
-          Decision Analytics
+PhD Scholar in Operations and Supply Chain Management at the Department of Management Studies, Indian Institute of Technology  -IIT Delhi<br></br>With expertise in Web and API development, Optimization, and Decision Analytics.
         </h3>
 
         <div className="cta">

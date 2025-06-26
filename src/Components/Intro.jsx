@@ -2,7 +2,7 @@ import { FaBriefcase } from 'react-icons/fa';
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
 import img from "../Assets/himanshu.jpeg";
-import "./intro.css";
+import "./Intro.css";
 
 const Intro = () => {
   return (
@@ -21,7 +21,8 @@ const Intro = () => {
             <article className="about__card">
               <FaBriefcase className="about__icon" />
               <h5>Experience (3+ years)</h5>
-              {/* <small>Over 3 years of experience</small> */}
+              {/* <small>Over 
+              3 years of experience</small> */}
             </article>
             </a>
             <a href="#portfolio">
@@ -32,15 +33,16 @@ const Intro = () => {
             </a>
           </div>
           <div className="multiline">
-            <p style={{textAlign:"justify",lineHeight:'1.5',maxWidth:'600px',margin:'0.5 auto'}}>
-              Operations Research professional currently pursuing PhD in Management Stuidies (Operations and Supply Chain Manangement) at
-              IIT Delhi, Department of Manangement Studies (DMS),With an M.Tech in
-              Operations Research from NIT Durgapur and over 3 years of
-              experience in Web,Database and API development, optimizing
-              solutions, and driving operational efficiency through
-              collaboration.
-            </p>
-          </div>
+  <p className="summary_section">
+  Operations Research professional currently pursuing a PhD in Management
+  Studies (Operations and Supply Chain Management) at the Department of
+  Management Studies (DMS), Indian Institute of Technology Delhi (IIT Delhi).
+  Holds an M.Tech in Operations Research from NIT Durgapur, with over 3 years
+  of experience in web, database, and API development.
+</p>
+
+</div>
+
           <a href="#contact" className="btn btn-primary btn-right">
             Let's Talk
           </a>

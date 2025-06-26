@@ -10,6 +10,34 @@ header {
   position: relative;
 }
 
+.text-light {
+  font-size: 0.3rem;
+  /* Slightly smaller font for mobile */
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  /* Less spacing to avoid gaps on small screens */
+  text-align: center;
+  padding: 8px 10px;
+  /* Tighter padding for mobile */
+  word-break: break-word;
+}
+
+/* Tablet and larger screens — enhance font size and spacing */
+@media (min-width: 400px) {
+  .text-light {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (min-width: 900px) {
+  .text-light {
+    font-size: 1.4rem;
+  }
+}
+
 .cta {
   display: flex;
   justify-content: center;
